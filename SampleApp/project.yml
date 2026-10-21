@@ -1,0 +1,39 @@
+name: AppVaultIOSTest
+options:
+  bundleIdPrefix: com.sign3
+  deploymentTarget:
+    iOS: "16.0"
+  createIntermediateGroups: true
+
+# The AppVault package, straight from GitHub (README "Step 1 - Add the package").
+# Until version 0.2.0 is tagged, this points at the branch that has the in-place feature.
+# After release, replace the `branch:` line with:   version: 0.2.0
+packages:
+  AppVault:
+    url: https://github.com/Sign3labs/app-vault-ios
+    branch: inplace-package-obfuscation
+
+targets:
+  AppVaultIOSTest:
+    type: application
+    platform: iOS
+    sources:
+      - path: AppVaultIOSTest
+    dependencies:
+      - package: AppVault
+        product: AppVault
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.sign3.AppVaultIOSTest
+        MARKETING_VERSION: "1.0"
+        CURRENT_PROJECT_VERSION: "1"
+        GENERATE_INFOPLIST_FILE: YES
+        SWIFT_VERSION: "6.0"
+        TARGETED_DEVICE_FAMILY: "1"
+        INFOPLIST_KEY_UILaunchScreen_Generation: YES
+        INFOPLIST_KEY_UIApplicationSceneManifest_Generation: YES
+
+# The AppVault build phases (stage + restore) and "User Script Sandboxing = No" are added by the
+# setup script, exactly as the README describes:
+#   ruby <AppVault checkout>/Scripts/appvault-setup.rb AppVaultIOSTest.xcodeproj
+# The committed .xcodeproj below already has them wired, so you can open and build right away.

@@ -1,0 +1,33 @@
+{
+  "originHash" : "6e06e207bb941f2a31c2d63b8ef98fa05701a89f8e914880eb3b57048719c374",
+  "pins" : [
+    {
+      "identity" : "app-vault-ios",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/Sign3labs/app-vault-ios",
+      "state" : {
+        "branch" : "inplace-package-obfuscation",
+        "revision" : "67ef60ebc6ccce8b40cc9a4458d89fe8e6802d69"
+      }
+    },
+    {
+      "identity" : "swift-confidential",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/securevale/swift-confidential.git",
+      "state" : {
+        "revision" : "791e9d042db3ed4070c6a1ccfc44885990874751",
+        "version" : "0.5.2"
+      }
+    },
+    {
+      "identity" : "swift-syntax",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/swiftlang/swift-syntax.git",
+      "state" : {
+        "revision" : "79e4b74a295b6eb74a8b585e3a39d29e70c1dbd1",
+        "version" : "603.0.2"
+      }
+    }
+  ],
+  "version" : 3
+}

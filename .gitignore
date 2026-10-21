@@ -1,0 +1,9 @@
+# Xcode / SwiftPM build output
+build-sim/
+.build/
+DerivedData/
+*.xcuserstate
+xcuserdata/
+.DS_Store
+# AppVault in-place obfuscation backups (never committed)
+appvault-backup/

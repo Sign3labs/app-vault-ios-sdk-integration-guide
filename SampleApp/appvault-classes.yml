@@ -1,0 +1,5 @@
+# In-place obfuscation: name the folder, every class in it is obfuscated at build time.
+# Name the package folder; every class in it has its string literals obfuscated at build time
+# (stage phase) and the source is restored afterwards (restore phase).
+packages:
+  - AppVaultIOSTest/Secure

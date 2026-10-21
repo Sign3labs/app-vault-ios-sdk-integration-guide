@@ -1,0 +1,387 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1DEB49AFDF5C7ECCEA0F378F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF3B7E8E9DFCD66D4A9ABE50 /* ContentView.swift */; };
+		9C45D8FAA750D53B68B96BDA /* AppVaultIOSTestApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EEBA846BFF7A3FFB4B0AA23 /* AppVaultIOSTestApp.swift */; };
+		E2B1E5D7D43E8051759C02C8 /* ApiConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 272A2E1C9124BE771A6F7CDF /* ApiConfig.swift */; };
+		FF45493093A3B64A4A137646 /* AppVault in Frameworks */ = {isa = PBXBuildFile; productRef = 0FD245923FE1E2560BD077DD /* AppVault */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		272A2E1C9124BE771A6F7CDF /* ApiConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiConfig.swift; sourceTree = "<group>"; };
+		29F902F3B77F82BA83E1D068 /* AppVaultIOSTest.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = AppVaultIOSTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5EEBA846BFF7A3FFB4B0AA23 /* AppVaultIOSTestApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppVaultIOSTestApp.swift; sourceTree = "<group>"; };
+		DF3B7E8E9DFCD66D4A9ABE50 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8D0B89879CCF2D8F49539F25 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF45493093A3B64A4A137646 /* AppVault in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4478C330E59064DBBADFF348 /* Secure */ = {
+			isa = PBXGroup;
+			children = (
+				272A2E1C9124BE771A6F7CDF /* ApiConfig.swift */,
+			);
+			path = Secure;
+			sourceTree = "<group>";
+		};
+		90CB4F3DC775D51A4308C4B4 = {
+			isa = PBXGroup;
+			children = (
+				FC1AF8BB77B3E6A186A4586B /* AppVaultIOSTest */,
+				B464AD9F38D9C7DF0BE814ED /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B464AD9F38D9C7DF0BE814ED /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				29F902F3B77F82BA83E1D068 /* AppVaultIOSTest.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FC1AF8BB77B3E6A186A4586B /* AppVaultIOSTest */ = {
+			isa = PBXGroup;
+			children = (
+				5EEBA846BFF7A3FFB4B0AA23 /* AppVaultIOSTestApp.swift */,
+				DF3B7E8E9DFCD66D4A9ABE50 /* ContentView.swift */,
+				4478C330E59064DBBADFF348 /* Secure */,
+			);
+			path = AppVaultIOSTest;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3F352D8BDE68A38428A4D1E8 /* AppVaultIOSTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A9B7E2C6B3F9F9815B352A39 /* Build configuration list for PBXNativeTarget "AppVaultIOSTest" */;
+			buildPhases = (
+				4A2F7098E71141345E1C6EC8 /* AppVault Stage */,
+				4A94176C22D395BB6E777781 /* Sources */,
+				8D0B89879CCF2D8F49539F25 /* Frameworks */,
+				771828B69C257F52CC768931 /* AppVault Restore */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AppVaultIOSTest;
+			packageProductDependencies = (
+				0FD245923FE1E2560BD077DD /* AppVault */,
+			);
+			productName = AppVaultIOSTest;
+			productReference = 29F902F3B77F82BA83E1D068 /* AppVaultIOSTest.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BAC752BFEA9AEA6998F96C1C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+				};
+			};
+			buildConfigurationList = BFF5C1C94F00F0B8BC567BA6 /* Build configuration list for PBXProject "AppVaultIOSTest" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = 90CB4F3DC775D51A4308C4B4;
+			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				4A5DB0484D5CA5EAD10E0007 /* XCRemoteSwiftPackageReference "app-vault-ios" */,
+			);
+			preferredProjectObjectVersion = 77;
+			productRefGroup = B464AD9F38D9C7DF0BE814ED /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3F352D8BDE68A38428A4D1E8 /* AppVaultIOSTest */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4A2F7098E71141345E1C6EC8 /* AppVault Stage */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "AppVault Stage";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Obfuscate the configured packages in place before compiling.  (managed by appvault-setup.rb; safe to re-run)\nexport APPVAULT_DIR=\"${APPVAULT_DIR:-${BUILD_DIR%/Build/*}/SourcePackages/checkouts/app-vault-ios}\"\nINPLACE=\"$APPVAULT_DIR/Scripts/appvault-inplace.sh\"\nif [ -f \"$INPLACE\" ]; then\n  \"$INPLACE\" stage\nelse\n  echo \"warning: AppVault not found at $APPVAULT_DIR — set APPVAULT_DIR; skipping stage.\"\nfi\n";
+		};
+		771828B69C257F52CC768931 /* AppVault Restore */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "AppVault Restore";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Restore the pristine source after compiling (working tree stays unchanged).  (managed by appvault-setup.rb; safe to re-run)\nexport APPVAULT_DIR=\"${APPVAULT_DIR:-${BUILD_DIR%/Build/*}/SourcePackages/checkouts/app-vault-ios}\"\nINPLACE=\"$APPVAULT_DIR/Scripts/appvault-inplace.sh\"\nif [ -f \"$INPLACE\" ]; then\n  \"$INPLACE\" restore\nelse\n  echo \"warning: AppVault not found at $APPVAULT_DIR — set APPVAULT_DIR; skipping restore.\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4A94176C22D395BB6E777781 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E2B1E5D7D43E8051759C02C8 /* ApiConfig.swift in Sources */,
+				9C45D8FAA750D53B68B96BDA /* AppVaultIOSTestApp.swift in Sources */,
+				1DEB49AFDF5C7ECCEA0F378F /* ContentView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		6AFC6C79B8DAF88EAB598966 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		6B2A2E78A7D232C8562C91C6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sign3.AppVaultIOSTest;
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 6.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		9EC61992BAC255E916DA5693 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sign3.AppVaultIOSTest;
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 6.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		B1D216B55BEADE3D3FED822B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A9B7E2C6B3F9F9815B352A39 /* Build configuration list for PBXNativeTarget "AppVaultIOSTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9EC61992BAC255E916DA5693 /* Debug */,
+				6B2A2E78A7D232C8562C91C6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		BFF5C1C94F00F0B8BC567BA6 /* Build configuration list for PBXProject "AppVaultIOSTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B1D216B55BEADE3D3FED822B /* Debug */,
+				6AFC6C79B8DAF88EAB598966 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		4A5DB0484D5CA5EAD10E0007 /* XCRemoteSwiftPackageReference "app-vault-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Sign3labs/app-vault-ios";
+			requirement = {
+				branch = "inplace-package-obfuscation";
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		0FD245923FE1E2560BD077DD /* AppVault */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4A5DB0484D5CA5EAD10E0007 /* XCRemoteSwiftPackageReference "app-vault-ios" */;
+			productName = AppVault;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = BAC752BFEA9AEA6998F96C1C /* Project object */;
+}
