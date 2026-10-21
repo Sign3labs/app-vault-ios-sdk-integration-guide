@@ -6,7 +6,8 @@ URLs will not show up as plain readable words inside the finished app.
 ## What is in this repo
 
 - **This README** - a step-by-step guide to add AppVault to your own iOS app.
-- **`SampleApp/`** - a small, working example app that already has AppVault set up. Open it to see the
+- **`SampleApp/`** - a small, working example app that already has AppVault set up, demonstrating
+  **both** Way 1 (declared secrets in `appvault.yml`) and Way 2 (a protected folder). Open it to see the
   exact files and settings described below. It uses the AppVault package straight from GitHub, so it is
   a real, buildable example.
 

@@ -73,14 +73,15 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A9B7E2C6B3F9F9815B352A39 /* Build configuration list for PBXNativeTarget "AppVaultIOSTest" */;
 			buildPhases = (
-				4A2F7098E71141345E1C6EC8 /* AppVault Stage */,
+				B550E0F41B9C24E7A3E9BF53 /* AppVault Stage */,
 				4A94176C22D395BB6E777781 /* Sources */,
 				8D0B89879CCF2D8F49539F25 /* Frameworks */,
-				771828B69C257F52CC768931 /* AppVault Restore */,
+				32A82E6D9E9FB11547630ECA /* AppVault Restore */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				31990EE2F87A4EE2E2D6EA8A /* PBXTargetDependency */,
 			);
 			name = AppVaultIOSTest;
 			packageProductDependencies = (
@@ -124,26 +125,7 @@
 /* End PBXProject section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		4A2F7098E71141345E1C6EC8 /* AppVault Stage */ = {
-			isa = PBXShellScriptBuildPhase;
-			alwaysOutOfDate = 1;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-			);
-			name = "AppVault Stage";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "# Obfuscate the configured packages in place before compiling.  (managed by appvault-setup.rb; safe to re-run)\nexport APPVAULT_DIR=\"${APPVAULT_DIR:-${BUILD_DIR%/Build/*}/SourcePackages/checkouts/app-vault-ios}\"\nINPLACE=\"$APPVAULT_DIR/Scripts/appvault-inplace.sh\"\nif [ -f \"$INPLACE\" ]; then\n  \"$INPLACE\" stage\nelse\n  echo \"warning: AppVault not found at $APPVAULT_DIR — set APPVAULT_DIR; skipping stage.\"\nfi\n";
-		};
-		771828B69C257F52CC768931 /* AppVault Restore */ = {
+		32A82E6D9E9FB11547630ECA /* AppVault Restore */ = {
 			isa = PBXShellScriptBuildPhase;
 			alwaysOutOfDate = 1;
 			buildActionMask = 2147483647;
@@ -162,6 +144,25 @@
 			shellPath = /bin/sh;
 			shellScript = "# Restore the pristine source after compiling (working tree stays unchanged).  (managed by appvault-setup.rb; safe to re-run)\nexport APPVAULT_DIR=\"${APPVAULT_DIR:-${BUILD_DIR%/Build/*}/SourcePackages/checkouts/app-vault-ios}\"\nINPLACE=\"$APPVAULT_DIR/Scripts/appvault-inplace.sh\"\nif [ -f \"$INPLACE\" ]; then\n  \"$INPLACE\" restore\nelse\n  echo \"warning: AppVault not found at $APPVAULT_DIR — set APPVAULT_DIR; skipping restore.\"\nfi\n";
 		};
+		B550E0F41B9C24E7A3E9BF53 /* AppVault Stage */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "AppVault Stage";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Obfuscate the configured packages in place before compiling.  (managed by appvault-setup.rb; safe to re-run)\nexport APPVAULT_DIR=\"${APPVAULT_DIR:-${BUILD_DIR%/Build/*}/SourcePackages/checkouts/app-vault-ios}\"\nINPLACE=\"$APPVAULT_DIR/Scripts/appvault-inplace.sh\"\nif [ -f \"$INPLACE\" ]; then\n  \"$INPLACE\" stage\nelse\n  echo \"warning: AppVault not found at $APPVAULT_DIR — set APPVAULT_DIR; skipping stage.\"\nfi\n";
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -176,6 +177,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		31990EE2F87A4EE2E2D6EA8A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			productRef = 26E2E78D7A55F487DEA6CEE6 /* plugin:AppVaultPlugin */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		6AFC6C79B8DAF88EAB598966 /* Release */ = {
@@ -380,6 +388,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 4A5DB0484D5CA5EAD10E0007 /* XCRemoteSwiftPackageReference "app-vault-ios" */;
 			productName = AppVault;
+		};
+		26E2E78D7A55F487DEA6CEE6 /* plugin:AppVaultPlugin */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4A5DB0484D5CA5EAD10E0007 /* XCRemoteSwiftPackageReference "app-vault-ios" */;
+			productName = "plugin:AppVaultPlugin";
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

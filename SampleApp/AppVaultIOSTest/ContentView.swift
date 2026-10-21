@@ -1,4 +1,5 @@
 import SwiftUI
+import AppVault
 
 struct ContentView: View {
     private let config = ApiConfig.shared
@@ -6,19 +7,24 @@ struct ContentView: View {
     var body: some View {
         NavigationStack {
             List {
-                Section("Deobfuscated at runtime") {
+                Section("Mode 1 - declared in appvault.yml") {
+                    // AppVaultSecrets is generated at build time by AppVaultPlugin.
+                    row("Demo token", AppVaultSecrets.$demoToken)
+                    row("Analytics URL", AppVaultSecrets.$analyticsURL)
+                }
+                Section("Mode 2 - a protected folder (ApiConfig)") {
                     row("Base URL", config.baseURL)
                     row("Token endpoint", config.tokenEndpoint())
                     row("API key", config.apiKey)
                     row("Pinning SPKI", config.pinningSPKI)
                 }
-                Section("Jailbreak signatures") {
+                Section("Jailbreak signatures (Mode 2)") {
                     ForEach(config.suspiciousPaths, id: \.self) { path in
                         Text(path).font(.footnote.monospaced())
                     }
                 }
                 Section {
-                    Text("These strings are reconstructed at runtime by AppVault. None of them appears as plaintext in the compiled binary.")
+                    Text("Every value above is rebuilt at runtime by AppVault. None of them appears as plaintext in the compiled binary.")
                         .font(.footnote)
                         .foregroundStyle(.secondary)
                 }

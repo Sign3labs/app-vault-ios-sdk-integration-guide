@@ -1,0 +1,14 @@
+# Mode 1 - declared secrets (README "Way 1 / Mode A").
+# AppVaultPlugin reads this at build time and generates the `AppVaultSecrets` namespace.
+# The plaintext below is encrypted during the build and never lands in the app binary.
+# Keep this file next to the .xcodeproj, and make sure NO target membership is ticked for it.
+algorithm:
+  - encrypt using aes-256-gcm
+  - shuffle
+defaultNamespace: create AppVaultSecrets
+defaultAccessModifier: internal
+secrets:
+  - name: demoToken
+    value: demo-token-9a8b7c6d5e4f
+  - name: analyticsURL
+    value: https://analytics.appvault-demo.example/collect
